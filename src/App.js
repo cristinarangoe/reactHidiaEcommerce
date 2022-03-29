@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React from 'react';
+import NavBar from './components/NavBar';
 
-  let mystring = "hola mundo";
-  let nombre = "Mi nombre es Cristina Arango Escobar"
+export default function App(){
+
   return (
-    <div className="App">
-      <p>{mystring}</p>
-      <p>{nombre}</p>
-    </div>
+    <>
+        <div className="App">
+          <NavBar></NavBar>
+        </div>
+    </>
+
   );
 }
 
-export default App;
