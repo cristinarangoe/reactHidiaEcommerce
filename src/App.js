@@ -1,16 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 import React from 'react';
 import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 export default function App(){
 
   return (
     <>
-        <div className="App">
-          <NavBar></NavBar>
-        </div>
+      <NavBar></NavBar>
+      <ItemListContainer saludo="Este es un saludo, para todos los que están viendo esta página web"></ItemListContainer>
     </>
 
   );
