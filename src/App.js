@@ -8,7 +8,7 @@ export default function App(){
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar/>
       <ItemListContainer saludo="Este es un saludo, para todos los que están viendo esta página web"></ItemListContainer>
     </>
 
