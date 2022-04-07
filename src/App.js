@@ -2,7 +2,7 @@ import './App.css';
 
 import React from 'react';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/ItemList/ItemListContainer';
 
 export default function App(){
 
