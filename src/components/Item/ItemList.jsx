@@ -4,16 +4,20 @@
 //lo mapea y cuando lo mapea genera un item cada vez
 
 import React from "react";
-import Item from "../Item";
+import Item from "./Item";
 
 export default function ItemList({ productos }) {
+    console.log("hola")
     return productos.map(prod => (
-        //console.log(prod.nombre);
+        console.log(prod.nombre),
     <Item
         id={prod.id}
         nombre={prod.nombre}
         precio={prod.precio}
         imagen={prod.imagen}
-    >cristina</Item>
+    ></Item>
+
+
+
     ));
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import CartWidget from './CartWidget'
-import logo from '../img/Logo.png'
+import CartWidget from '../CartWidget'
+import logo from '../../img/Logo.png'
 
 export default function Item({id, nombre, precio, imagen}) {
     console.log("cristina")
