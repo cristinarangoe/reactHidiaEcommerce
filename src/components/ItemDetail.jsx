@@ -1,9 +1,9 @@
 import React from 'react'
-import CartWidget from '../CartWidget'
+import CartWidget from './CartWidget'
 import ItemCount from './ItemCount'
 
 
-export default function ItemDetail({producto}) {
+export default function ItemDetail({producto, onAdd}) {
 
     
     return (
@@ -17,12 +17,7 @@ export default function ItemDetail({producto}) {
                 <p className="text-xl my-4">{producto.descripcion}</p>
                 <div className="flex flex-row justify-center items-center">
                     <p className="text-xl ">${producto.precio}</p>
-                    <div className="flex items-center mx-16 ">
-                        <button className="bg-hidia-blue px-2 rounded text-white text-lg" >-</button>
-                        <p className="mx-4">1</p>
-                        <button className="bg-hidia-blue px-2 rounded text-white text-lg" >+</button>
-                    </div>
-                    <CartWidget/>
+                    <ItemCount onAdd={onAdd} initial={1} stock={producto.stock}/>
                 </div>
             </div>
         </div>

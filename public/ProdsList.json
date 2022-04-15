@@ -1,0 +1,66 @@
+[
+    {
+        "id": "001",
+        "nombre": "Plato mexicano",
+        "precio": 12000,
+        "descripcion": "plato con deliciosos ingredientes",
+        "imagen": "/img/Logo.png",
+        "categoria": "mexicano"
+    },
+    {
+        "id": "002",
+        "nombre": "Nachos",
+        "precio": 10000,
+        "descripcion": "plato con deliciosos ingredientes",
+        "imagen": "/img/Logo.png",
+        "categoria": "mexicano"
+    },
+    {
+        "id": "003",
+        "nombre": "Arepa blanca pequeña",
+        "precio": 15000,
+        "descripcion": "arepa hecha con maiz 100% colombiano",
+        "imagen": "/img/Logo.png",
+        "categoria": "arepas"
+    },
+    {
+        "id": "004",
+        "nombre": "Arepa blanca grande",
+        "precio": 8000,
+        "descripcion": "arepa version grande blanca",
+        "imagen": "/img/Logo.png",
+        "categoria": "arepas"
+    },
+    {
+        "id": "005",
+        "nombre": "Arepa de chócolo",
+        "precio": 11000,
+        "descripcion": "chocolo 100% natural",
+        "imagen": "/img/Logo.png",
+        "categoria": "arepas"
+    },
+    {
+        "id": "006",
+        "nombre": "Chorizo de cerdo",
+        "precio": 20000,
+        "descripcion": "Hecho con ingredientes de la mejor calidad",
+        "imagen": "/img/Logo.png",
+        "categoria": "carnicos"
+    },
+    {
+        "id": "007",
+        "nombre": "Carne de hamburguesa",
+        "precio": 22000,
+        "descripcion": "Carne de res",
+        "imagen": "/img/Logo.png",
+        "categoria": "carnicos"
+    },
+    {
+        "id": "008",
+        "nombre": "Guacamole",
+        "precio": 15000,
+        "descripcion": "Hecho sin conservantes",
+        "imagen": "/img/Logo.png",
+        "categoria": "mexicano"
+    }
+]

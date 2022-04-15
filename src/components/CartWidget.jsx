@@ -4,7 +4,7 @@ export default function CartWidget() {
     return (
         <>
             <div className="px-3 flex">
-                <a className="bg-hidia-blue p-2 rounded" href="#">
+                <a className="bg-hidia-blue p-2 rounded" >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
