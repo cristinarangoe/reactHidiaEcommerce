@@ -17,8 +17,7 @@ export default function ItemList({ productos, categoria }) {
     }
 
     return productosFiltrado.map(prod => (
-        console.log(prod.nombre),
-    <Item
+    <Item key={prod.id}
         producto = {prod}
     ></Item>
     ));

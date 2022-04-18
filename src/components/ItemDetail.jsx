@@ -1,16 +1,14 @@
 import React from 'react'
-import CartWidget from './CartWidget'
 import ItemCount from './ItemCount'
 
 
 export default function ItemDetail({producto, onAdd}) {
 
-    
     return (
         <>
-        <div className="flex flex-row mx-10">
-            <div className="basis-1/2 grid justify-items-center">
-                <img src={producto.imagen}/>
+        <div key={producto.id} className="flex flex-row mx-10 ">
+            <div className="basis-1/2 grid justify-items-center ">
+                <img className="max-h-96" src={producto.imagen} alt={producto.nombre}/>
             </div>
             <div className="basis-1/2 mx-10">
                 <h1 className="text-5xl text-center text-hidia-yellow">{producto.nombre}</h1>

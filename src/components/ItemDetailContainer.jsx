@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail';
 import {useParams} from 'react-router-dom';
-//import img from '../../img/platoMexicano.png';
-
 
 export default function ItemDetailContainer() {
 
@@ -10,8 +8,6 @@ export default function ItemDetailContainer() {
     const [producto, setProducto] = useState({});
 
     const {idItem} = useParams();
-
-    console.log(idItem);
 
     useEffect(() => {
 
@@ -36,7 +32,6 @@ export default function ItemDetailContainer() {
         .then(res => {
             res.map(prod => {
                 if(prod.id ===idItem){
-                    console.log(prod.nombre)
                     setProducto(prod);
                 }
             })
@@ -46,19 +41,15 @@ export default function ItemDetailContainer() {
         })
 
 
-    }, []);
-
-    console.log(producto)
+    }, [idItem]);
 
     function onAdd(cantidad){
-        console.log("hola");
         setCantFinal(cantidad);
         alert('Se han agregado los productos al carrito.')
     }
 
     return (
         <>
-            <h1>{cantFinal}</h1>
             <ItemDetail producto={producto} onAdd={onAdd}/>
         </>
     )

@@ -4,7 +4,7 @@ import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  let categorias = ["arepas", "carnicos", "mexicano"];
+  let categorias = ["Arepas", "Cárnicos", "Mexicano"];
 
   return (
     <>
@@ -17,28 +17,28 @@ export default function NavBar() {
           </div>
           <div className="flex items-center px-3">
             <div className="px-3">
-              <ul className="flex list-none text-md lg:text-xl font-medium font-sans ">
-                <li className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
+              <ul key="navBarList" className="flex list-none text-md lg:text-xl font-medium font-sans ">
+                <li key="inicio" className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
                   <Link to={"/"}>Inicio</Link>
                 </li>
-                <li className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
+                <li key="contacto" className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
                   <Link to={"/"}>Contacto</Link>
                 </li>
-                <li>
-                  <ul>
+                <li key="productos">
+                  <ul key="categoriesList">
                     {categorias.map((cat) => (
-                      <li className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
+                      <li key={cat} className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
                         <Link to={`/category/${cat}`}>{cat}</Link>
                       </li>
                     ))} 
                   </ul>
                 </li>
-                <li className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
+                <li key="perfil/registro" className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
                   <Link to={"/"}>Perfil/Registro</Link>
                 </li>
               </ul>
             </div>
-            <CartWidget></CartWidget>
+            <CartWidget />
           </div>
         </div>
       </nav>

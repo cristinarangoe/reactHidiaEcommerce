@@ -4,48 +4,54 @@
         "nombre": "Plato mexicano",
         "precio": 12000,
         "descripcion": "plato con deliciosos ingredientes",
-        "imagen": "/img/Logo.png",
-        "categoria": "mexicano"
+        "imagen": "/img/platoMexicano.png",
+        "categoria": "Mexicano",
+        "stock": 5
     },
     {
         "id": "002",
         "nombre": "Nachos",
         "precio": 10000,
         "descripcion": "plato con deliciosos ingredientes",
-        "imagen": "/img/Logo.png",
-        "categoria": "mexicano"
+        "imagen": "/img/nachos.jpg",
+        "categoria": "Mexicano",
+        "stock": 5
     },
     {
         "id": "003",
         "nombre": "Arepa blanca pequeña",
         "precio": 15000,
         "descripcion": "arepa hecha con maiz 100% colombiano",
-        "imagen": "/img/Logo.png",
-        "categoria": "arepas"
+        "imagen": "/img/arepasPequena.jpg",
+        "categoria": "Arepas",
+        "stock": 5
     },
     {
         "id": "004",
         "nombre": "Arepa blanca grande",
         "precio": 8000,
         "descripcion": "arepa version grande blanca",
-        "imagen": "/img/Logo.png",
-        "categoria": "arepas"
+        "imagen": "/img/arepaGrande.jpg",
+        "categoria": "Arepas",
+        "stock": 5
     },
     {
         "id": "005",
-        "nombre": "Arepa de chócolo",
+        "nombre": "Arepa de queso",
         "precio": 11000,
-        "descripcion": "chocolo 100% natural",
-        "imagen": "/img/Logo.png",
-        "categoria": "arepas"
+        "descripcion": "Queso mozzarella 100% natural",
+        "imagen": "/img/arepaQueso.jpg",
+        "categoria": "Arepas",
+        "stock": 5
     },
     {
         "id": "006",
         "nombre": "Chorizo de cerdo",
         "precio": 20000,
         "descripcion": "Hecho con ingredientes de la mejor calidad",
-        "imagen": "/img/Logo.png",
-        "categoria": "carnicos"
+        "imagen": "/img/chorizos.jpg",
+        "categoria": "Cárnicos",
+        "stock": 5
     },
     {
         "id": "007",
@@ -53,14 +59,25 @@
         "precio": 22000,
         "descripcion": "Carne de res",
         "imagen": "/img/Logo.png",
-        "categoria": "carnicos"
+        "categoria": "Cárnicos",
+        "stock": 5
     },
     {
         "id": "008",
         "nombre": "Guacamole",
         "precio": 15000,
         "descripcion": "Hecho sin conservantes",
-        "imagen": "/img/Logo.png",
-        "categoria": "mexicano"
+        "imagen": "/img/guacamole.jpg",
+        "categoria": "Mexicano",
+        "stock": 5
+    },
+    {
+        "id": "009",
+        "nombre": "Salsa de pimentón",
+        "precio": 15000,
+        "descripcion": "Pimenton",
+        "imagen": "/img/salsaPimenton.jpg",
+        "categoria": "Mexicano",
+        "stock": 5
     }
 ]
