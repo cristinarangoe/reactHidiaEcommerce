@@ -2,7 +2,7 @@ import React from 'react'
 import ItemCount from './ItemCount'
 
 
-export default function ItemDetail({producto, onAdd}) {
+export default function ItemDetail({producto}) {
 
     return (
         <>
@@ -15,7 +15,7 @@ export default function ItemDetail({producto, onAdd}) {
                 <p className="text-xl my-4">{producto.descripcion}</p>
                 <div className="flex flex-row justify-center items-center">
                     <p className="text-xl ">${producto.precio}</p>
-                    <ItemCount onAdd={onAdd} initial={1} stock={producto.stock}/>
+                    <ItemCount initial={1} producto={producto}/>
                 </div>
             </div>
         </div>

@@ -1,10 +1,11 @@
-import React from "react";
-//import logo from '../img/Logo.png'
+import React, { useContext } from "react";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
+import { Context } from "../Context/CartContext";
 
 export default function NavBar() {
   let categorias = ["Arepas", "Cárnicos", "Mexicano"];
+  const {cantFinal} = useContext(Context);
 
   return (
     <>
@@ -38,7 +39,7 @@ export default function NavBar() {
                 </li>
               </ul>
             </div>
-            <CartWidget />
+            <Link to={'/cart'}><CartWidget >({cantFinal})</CartWidget></Link>
           </div>
         </div>
       </nav>

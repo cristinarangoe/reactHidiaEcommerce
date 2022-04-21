@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from "react-router-dom";
+import { Context } from '../Context/CartContext';
 
 
-export default function ItemCount({ onAdd, stock, initial}) {
+export default function ItemCount({ initial, producto}) {
 
     const [cantParcial, setCantParcial] = useState(initial);
 
+    const {addItem} = useContext(Context);
+
     function adding(){
-        if(cantParcial < stock){
+        if(cantParcial < producto.stock){
             setCantParcial(cantParcial + 1);
         }
     }
@@ -25,7 +28,7 @@ export default function ItemCount({ onAdd, stock, initial}) {
                     <button className="px-2 rounded border-2 border-hidia-blue text-hidia-blue text-lg font-medium" onClick={adding}>+</button>
                 </div>
                 <div className="flex mx-16">
-                    <button className="bg-hidia-blue p-2 rounded" onClick={() => onAdd(cantParcial)}>
+                    <button className="bg-hidia-blue p-2 rounded" onClick={() => addItem(producto,cantParcial)}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"

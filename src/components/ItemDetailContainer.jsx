@@ -4,7 +4,7 @@ import {useParams} from 'react-router-dom';
 
 export default function ItemDetailContainer() {
 
-    const [cantFinal, setCantFinal] = useState(1);
+    //const [cantFinal, setCantFinal] = useState(1);
     const [producto, setProducto] = useState({});
 
     const {idItem} = useParams();
@@ -43,14 +43,14 @@ export default function ItemDetailContainer() {
 
     }, [idItem]);
 
-    function onAdd(cantidad){
-        setCantFinal(cantidad);
-        alert('Se han agregado los productos al carrito.')
-    }
+    // function onAdd(cantidad){
+    //     setCantFinal(cantidad);
+    //     alert('Se han agregado los productos al carrito.')
+    // }
 
     return (
         <>
-            <ItemDetail producto={producto} onAdd={onAdd}/>
+            <ItemDetail producto={producto} />
         </>
     )
 }
