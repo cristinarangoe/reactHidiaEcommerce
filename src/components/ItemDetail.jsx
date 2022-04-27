@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCount from './ItemCount'
+import ItemBuy from './ItemBuy'
 
 
 export default function ItemDetail({producto}) {
@@ -14,8 +14,8 @@ export default function ItemDetail({producto}) {
                 <h1 className="text-5xl text-center text-hidia-yellow">{producto.nombre}</h1>
                 <p className="text-xl my-4">{producto.descripcion}</p>
                 <div className="flex flex-row justify-center items-center">
-                    <p className="text-xl ">${producto.precio}</p>
-                    <ItemCount initial={1} producto={producto}/>
+                    <p className="text-xl mr-16 ">${producto.precio}</p>
+                    <ItemBuy initial={1} producto={producto}/>
                 </div>
             </div>
         </div>
