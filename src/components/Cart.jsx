@@ -1,20 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import { Context } from '../Context/CartContext'
 import CartItem from './CartItem';
 
 export default function Cart() {
 
-    const [vacio, setVacio] = useState(true);
+    const { productosCarrito,  clear, totalCosto } = useContext(Context);
 
-    const { productosCarrito, removeItem, clear, totalCosto } = useContext(Context);
-
-    useEffect(() => {
-        setVacio(true);
-        if(productosCarrito.length > 0) setVacio(false);
-    })
-
-    if(vacio) return (
+    if(productosCarrito.length === 0) return (
             <>
                 <h1 className="text-lg mx-5 my-10">Aún no has agregado productos a tu carrito, anímate a agregarlos, presionando el siguiente botón:</h1>
                 <Link to={'/'} className="bg-hidia-blue p-2 rounded text-white mx-5 my-3 w-6/12">Ir a productos.</Link> 
@@ -39,7 +32,7 @@ export default function Cart() {
                         <h2>Total</h2>
                     </div>
                     <div className="flex justify-center basis-1/6">
-                        <h2></h2>
+                        <p></p>
                     </div>
                 </div>
 

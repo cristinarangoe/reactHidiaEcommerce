@@ -43,7 +43,7 @@ export default function CartContext({children}) {
     function removeItem(idItem){
         let prodEliminar =  productosCarrito.find((prod) => prod.id === idItem);
         setCantFinal(cantFinal - prodEliminar.cantidad);
-        setProductosCarrito(productosCarrito.filter(prod => prod.id != idItem));
+        setProductosCarrito(productosCarrito.filter(prod => prod.id !== idItem));
         setTotalCosto(totalCosto - prodEliminar.total);
     }
 

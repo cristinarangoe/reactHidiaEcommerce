@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import ItemList from './ItemList';
 import {useParams} from 'react-router-dom';
 
+import {collection, getDocs, getFirestore} from 'firebase/firestore';
+
 
 export default function ItemListContainer() {
 
@@ -9,28 +11,49 @@ export default function ItemListContainer() {
 
     const {idCategory} = useParams();
 
+    //conexion a base de datos de firebase
     useEffect(() => {
+        const db = getFirestore();
 
-        // new Promise((resolve, reject) => {
-        //     setTimeout(() => {
-        //         resolve(ProdsList)
-        //         //reject(null)
-        //     }, 3000)
-        //     //reject(null)
-        // })
+        const refProductos = collection(db, 'productos');
+
+        getDocs(refProductos).then((res) => {
+
+            console.log(res.docs);
+            setProductos(res.docs.map((item) => (
+                {id: item.id, ...item.data()}
+            )))
+
+        })
+    },[]);
+
+    useEffect(() => {
+        console.log(productos);    
+    },[productos])
+
+    //conexion a productos con promesas.
+    // useEffect(() => {
+
+    //     // new Promise((resolve, reject) => {
+    //     //     setTimeout(() => {
+    //     //         resolve(ProdsList)
+    //     //         //reject(null)
+    //     //     }, 3000)
+    //     //     //reject(null)
+    //     // })
 
 
 
-        fetch("/ProdsList.json")
-            .then(response => response.json())
-            .then(res => {
-                setProductos(res);
-            })
-            .catch(err => {
-                console.log(err);
-            })
+    //     fetch("/ProdsList.json")
+    //         .then(response => response.json())
+    //         .then(res => {
+    //             setProductos(res);
+    //         })
+    //         .catch(err => {
+    //             console.log(err);
+    //         })
 
-    },[idCategory])
+    // },[idCategory])
 
 
     //este es el que debe esperar 2 segundos

@@ -1,12 +1,12 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext} from 'react'
 import { Context } from '../Context/CartContext'
 import ItemCount from './ItemCount'
 
 export default function CartItem({producto}) {
 
-  const {cantFinal, setCantFinal,removeItem, addItem} = useContext(Context);
+  const {removeItem, addItem} = useContext(Context);
 
-  const [subtotalParcial, setSubtotalParcial] = useState(producto.precio * producto.cantidad);
+  //const [subtotalParcial, setSubtotalParcial] = useState(producto.precio * producto.cantidad);
 
   function adding(producto){
     if(producto.cantidad < producto.stock){
@@ -28,7 +28,7 @@ export default function CartItem({producto}) {
         <div className="flex flex-row items-center my-10 ">
             <div className="flex flex-row items-center basis-2/6 ">
               <div className="basis-1/2">
-                <img src={producto.imagen} className="w-32 lg:w-40 lg:pr-2"/>
+                <img src={producto.imagen} className="w-32 lg:w-40 lg:pr-2" alt={producto.nombre}/>
               </div>
               <div className="basis-1/2">
                 <h2 className="text-lg lg:text-2xl">{producto.nombre}</h2>

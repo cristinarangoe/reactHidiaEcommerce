@@ -4,6 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import { initializeApp } from "firebase/app";
+const firebaseConfig = {
+  apiKey: "AIzaSyDM-PEv1lPBbSrQY6yN8Nt3aTeG9EyDB20",
+  authDomain: "hidia-82c13.firebaseapp.com",
+  projectId: "hidia-82c13",
+  storageBucket: "hidia-82c13.appspot.com",
+  messagingSenderId: "559316427892",
+  appId: "1:559316427892:web:11f80543bf14eb737e9d21"
+};
+
+initializeApp(firebaseConfig);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

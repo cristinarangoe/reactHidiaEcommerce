@@ -4,6 +4,8 @@ import ItemBuy from './ItemBuy'
 
 export default function ItemDetail({producto}) {
 
+    console.log(producto.id)
+
     return (
         <>
         <div key={producto.id} className="flex flex-row mx-10 ">

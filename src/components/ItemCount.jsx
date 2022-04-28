@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
 export default function ItemCount({producto, onPressAdd, onPressSubs, cantidad}) {
@@ -10,7 +10,5 @@ export default function ItemCount({producto, onPressAdd, onPressSubs, cantidad})
                     <button className="px-2 rounded border-2 border-hidia-blue text-hidia-blue text-lg font-medium" onClick={() => onPressAdd()}>+</button>
                 </div>
     )
-
-
 }
 

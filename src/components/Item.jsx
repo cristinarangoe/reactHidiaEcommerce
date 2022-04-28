@@ -6,6 +6,8 @@ import { Context } from '../Context/CartContext';
 export default function Item({producto}) {
     const {addItem} = useContext(Context);
 
+    console.log(producto.id)
+
     return (
         <div key={producto.id} className="flex flex-col w-60 p-4 m-4  shadow-md rounded-lg">
             <Link to={`/item/${producto.id}`}><img className="px-2" src={producto.imagen} alt={producto.nombre}/></Link>
