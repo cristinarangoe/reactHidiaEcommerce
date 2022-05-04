@@ -66,7 +66,7 @@ export default function Cart() {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center">
-                    <button className="bg-white p-2 rounded text-hidia-blue mx-5 my-3 w-6/12">Continuar con el pago</button>
+                    <Link to={"/checkout"} className="bg-white p-2 rounded text-hidia-blue mx-5 my-3 w-6/12">Continuar con el pago</Link>
                     <button onClick={() => clear()} className="bg-white p-2 rounded text-hidia-blue mx-5 w-6/12 my-3">Vaciar el carrito</button>
                 </div>
             </div>
