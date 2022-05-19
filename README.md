@@ -30,6 +30,7 @@ npm run start
 Si haces algun cambio, para poner el proyecto en produccion debes ejecutar:
 ```sh
 npm run build
+firebase deploy
 ```
 
 # Librerias usadas:
