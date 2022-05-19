@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Context } from '../Context/CartContext'
 import ItemCount from './ItemCount'
 
+
 export default function ItemBuy({initial, producto}) {
 
     const [cantParcial, setCantParcial] = useState(initial);

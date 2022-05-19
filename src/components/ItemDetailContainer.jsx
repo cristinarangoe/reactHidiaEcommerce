@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail';
 import {useParams} from 'react-router-dom';
-import {doc, getDoc, getFirestore, } from 'firebase/firestore';
+import {doc, getDoc, getFirestore } from 'firebase/firestore';
 
 export default function ItemDetailContainer() {
 
@@ -20,7 +20,7 @@ export default function ItemDetailContainer() {
             setProducto({id: res.id, ...res.data()});
         })
 
-    },[]);
+    },[idItem]);
 
 
     //como se hiz con promesas, conexion antes de firebase

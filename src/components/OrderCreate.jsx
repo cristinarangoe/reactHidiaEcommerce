@@ -1,34 +1,15 @@
-import React, { useEffect } from 'react';
-import {doc, getDoc, getFirestore, collection, getDocs, addDoc} from 'firebase/firestore';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
 export default function OrderCreate({buyer}) {
 
     const {idCompra} = useParams(); 
 
-    // let idCompra;
-
-    // useEffect(() => {
-
-    //     const db = getFirestore();
-
-    //     const refVentas = collection(db, 'ventas');
-
-    //     addDoc(refVentas, buyer).then(({id}) => {
-    //         console.log(id);
-    //         idCompra = id;
-    //     })
-
-    // },[]);
-
-    // console.log(idCompra);
-    // console.log(buyer);
 
   return (
       <>
-      <div>Tu orden fue creada con exito</div>
-      <div>El id de tu compra es:</div>
-      <p>{idCompra}</p>
+      <h2 className="text-2xl my-5 mx-4">Tu orden fue creada con exito</h2>
+      <h2 className="text-2xl my-5 mx-4">El id de tu compra es: {idCompra}</h2>
       </>
   )
 }

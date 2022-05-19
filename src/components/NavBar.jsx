@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 import { Context } from "../Context/CartContext";
+import Dropdown  from "./Dropdown";
 
 export default function NavBar() {
-  let categorias = ["Arepas", "Cárnicos", "Mexicano"];
   const {cantFinal} = useContext(Context);
 
   return (
@@ -25,14 +25,8 @@ export default function NavBar() {
                 <li key="contacto" className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
                   <Link to={"/"}>Contacto</Link>
                 </li>
-                <li key="productos">
-                  <ul key="categoriesList">
-                    {categorias.map((cat) => (
-                      <li key={cat} className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
-                        <Link to={`/category/${cat}`}>{cat}</Link>
-                      </li>
-                    ))} 
-                  </ul>
+                <li key="productos" className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
+                  <Dropdown/>
                 </li>
                 <li key="perfil/registro" className="px-3 no-underline hover:underline hover:underline-offset-2 hover: decoration-hidia-yellow hover:decoration-2">
                   <Link to={"/"}>Perfil/Registro</Link>

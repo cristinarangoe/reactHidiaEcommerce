@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Bienvenidos al proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado, como proyecto final para el curso de React.js de Coder House.
+Consiste en un Ecommerce de una empresa que se dedica a comercializar productos alimenticios. En la página podrás ver los productos que manejan e ingresarlos al carrito para una posible futura compra. En la página podrás formalizar la compra.
+La URL donde está desplegada la pagina es: https://hidia-82c13.web.app 
+El link del repositorio de Github es: https://github.com/cristinarangoe/reactHidiaEcommerce
 
-## Available Scripts
+# Herramientas
+A continuacion, se enuncian las herramientas que se usaron para el proyecto:
+- Fué creando con la libreria para el Front-end, React.js. Se usó esta librería debido a que la finalidad del curso para el cual se desarrollo la aplicación era aprender React.js. Se uso la version 17.0.2 de react.js.
+- Para los estilos, se utilizó el framework de CSS llamado Tailwind. Se usoó este framework debido a que ya conocía otros framework y siempre me habia llamado la atencion aprender tailwind y este era el proyecto perfecto. Se uso la version 3.0.23 de tailwind.
+- Para las bases de datos y despliegue, se uso Firebase y firebase tools respectivamente, debido a que el curso se orientaba para aprender esta gran herramienta. Se uso la version 9.6.11 de firebase, y la version 10.9.2 de firebase tools
+- Git/Github: se uso para la herramienta de versionamiento y para montar el codigo en la nube.
 
-In the project directory, you can run:
+# Comandos importantes:
+Para bajar el proyecto de Github, debes meterte a la terminar de tu computador y ejecutar el comando: 
+Ojo: debes tener instalado Git en tu computador.
+```sh
+git clone https://github.com/cristinarangoe/reactHidiaEcommerce.git
+```
+Luego de que tengas la carpeta en tu computador, debes instalar los modulos de node, ejecutando el comando:
+Ojo: que ya debes tener instalado node.js en tu computador.
+```sh
+npm install
+```
+Para correr el proyecto en el local host, debes ejecutar el comando:
+```sh
+npm run start
+```
+Si haces algun cambio, para poner el proyecto en produccion debes ejecutar:
+```sh
+npm run build
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Librerias usadas:
+A continuacion, se enuncian las librerias que se usaron para el proyecto:
+- @radix-ui/react-dropdown-menu: esta fue usada, para poder hacer el dropdown en la barra de navegación. Se uso la version 0.1.6.
